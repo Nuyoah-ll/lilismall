@@ -1,16 +1,16 @@
 <template>
-  <div id="shopcart">
-    我是shopcart
+  <div id="profile">
+    我是profile
   </div>
 </template>
 
 <script>
   export default {
-    name: "Shopcart",
+    name: "Profile",
     components: {}
   }
 </script>
 
-<style>
+<style scoped>
 
 </style>

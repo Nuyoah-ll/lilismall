@@ -11,6 +11,8 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+  #category{
+    height: 90vh;
+  }
 </style>

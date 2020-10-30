@@ -861,6 +861,74 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@better-scroll/core@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/core/-/core-2.0.4.tgz#7d3ccdc1b443553297ef3596d26e0d49e4655d98"
+  integrity sha512-DKmQKnb537vxQ9T9EyhP1DkChvsgA5+LwVnEVnYDR4w/2/gmQVsAN2m0DRja6vLx6o40Uex3bODqxeJqhCkYhA==
+  dependencies:
+    "@better-scroll/shared-utils" "^2.0.4"
+
+"@better-scroll/mouse-wheel@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/mouse-wheel/-/mouse-wheel-2.0.4.tgz#5713e51aeeb361e7b88380123c64a2fdc42ea0ac"
+  integrity sha512-rtu1CK7YjrtnPrC4qRYXAU+7OsV8T/OVQ1mHoS4pHgGNavioZksKPSgZbyp4zt+AibEWPeA4y4EvZRWw6VwBTQ==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/observe-dom@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/observe-dom/-/observe-dom-2.0.4.tgz#a32b7bc75359cc67474e6f0534dfe4392ef2ee91"
+  integrity sha512-xA2fl3wyVSvY08edzAz1+hjiI+zvisRy4KKW4gPAHVZLcOdAlGu70ffKKcvd0DgTeJNnAW8cfAcVJ5oMgU1Gmw==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/pull-down@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/pull-down/-/pull-down-2.0.4.tgz#ac7d69af6aefd4a9e792221882fbc5d6b3b5bf12"
+  integrity sha512-Dr5l/GgMVz4Z9wnVp4BJTg2Fv8UaShqrbhuLO0NS9SlnrBhrald/PcCl3IQv1XFe9M1bgoC8dxkY80NKQWkBVg==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/pull-up@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/pull-up/-/pull-up-2.0.4.tgz#9f865e3f81d65230d9dc3241bf2ae09a8a6380d1"
+  integrity sha512-GHAEntRncWilftY7XIntkYinsoHXn3ITl4bH4EcQjTKeSlzVfjtFGfT/TEOwzzPF9wTNgPmyCbHhl9Db2Snyvg==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/scroll-bar@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/scroll-bar/-/scroll-bar-2.0.4.tgz#39798b461d4cfd5c8096933c88742a821566ca89"
+  integrity sha512-XMRJI3S2h+PdJ0URpAcKUcYFEjBT8JtMbZlsceElKCZQE8FzLE5p6fOItPQsb7tTeOrC4U32QzvuB42h/prxsg==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/shared-utils@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/shared-utils/-/shared-utils-2.0.4.tgz#4fc10e16fde42abfc8501ce1a521b05a862bc2e9"
+  integrity sha512-soMtzk6GIUMy4zOlOCEt2hE+PiYNctmjPXQkb3UgTTlcXH6vJJejr3QnxXxa2w2mDa/hz9YSaZGXZ7z67WGEMg==
+
+"@better-scroll/slide@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/slide/-/slide-2.0.4.tgz#a10eb0c3a6425f778336e18afa59ff7b48a39f8f"
+  integrity sha512-Qxizav86O8tedBODAJ90w/0FnMsVBcBI98UT5alnotcR4XANfWcKltgLtOXCg2SmmGFc058TOgZRmblY4PAEhg==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/wheel@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/wheel/-/wheel-2.0.4.tgz#17143a80ae69831d6fd112bf861afa3bd072e278"
+  integrity sha512-CJnx0UH3vWmiy/txuvLZmQSMaO2QuZp9G15NDnSn67xz9vZRhX0EzBC5HKegGDqGShSG/KAiIMwSoiQDstDvKA==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
+"@better-scroll/zoom@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@better-scroll/zoom/-/zoom-2.0.4.tgz#240d1b9bebc642163db0c27a0e6dcd5e5c60b6a9"
+  integrity sha512-r5P13/nUDLQqj1NqnCNFZvwv49xi/yn7Sow3XjyBJLsLA4yQ5f5/ty5KTk3bsx2kwia8TlasAPViZiNAVsoziQ==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -1826,6 +1894,21 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+better-scroll@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/better-scroll/-/better-scroll-2.0.4.tgz#fee56f6158319065161f7970804c64438880179c"
+  integrity sha512-ZpUxhDYMErpZRrOShpuoepUlXrJIRT8PO2+QqZOeqqDNcCQQdGc3w+DXJbUxKzOOEjyh/twcQ5oakb2I0wLXBg==
+  dependencies:
+    "@better-scroll/core" "^2.0.4"
+    "@better-scroll/mouse-wheel" "^2.0.4"
+    "@better-scroll/observe-dom" "^2.0.4"
+    "@better-scroll/pull-down" "^2.0.4"
+    "@better-scroll/pull-up" "^2.0.4"
+    "@better-scroll/scroll-bar" "^2.0.4"
+    "@better-scroll/slide" "^2.0.4"
+    "@better-scroll/wheel" "^2.0.4"
+    "@better-scroll/zoom" "^2.0.4"
 
 bfj@^6.1.1:
   version "6.1.2"
@@ -3513,6 +3596,11 @@ fast-json-stable-stringify@^2.0.0:
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
   integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
 
+fastclick@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fastclick/-/fastclick-1.0.6.tgz#161625b27b1a5806405936bda9a2c1926d06be6a"
+  integrity sha1-FhYlsnsaWAZAWTa9qaLBkm0Gvmo=
+
 faye-websocket@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.10.0.tgz#4e492f8d04dfb6f89003507f6edbf2d501e7c6f4"
@@ -4835,7 +4923,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3:
+lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.3:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -7585,6 +7673,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-lazyload@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/vue-lazyload/-/vue-lazyload-1.3.3.tgz#4df50a271bde9b74c3caf7a228d6e0af50d5682f"
+  integrity sha512-uHnq0FTEeNmqnbBC2aRKlmtd9LofMZ6Q3mWvgfLa+i9vhxU8fDK+nGs9c1iVT85axSua/AUnMttIq3xPaU9G3A==
 
 "vue-loader-v16@npm:vue-loader@^16.0.0-beta.7":
   version "16.0.0-beta.8"

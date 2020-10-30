@@ -1,11 +1,11 @@
 <template>
-  <div id="tabbar-item" @click="btnclick">
+  <div id="tabbar-item" @click="tabbarItemClick">
     <div v-if="currentUrl === $route.path">
-      <slot name="icon-active"><img src="../../../assets/img/tabbar/unknown-icon.png" alt="未知图片"></slot>
+      <slot name="icon-active"><img src="~assets/img/tabbar/unknown-icon.png" alt="未知图片"></slot>
       <p :style="{color:textColor}"><slot name="text">未知文字</slot></p>
     </div>
     <div v-else>
-      <slot name="icon"><img src="../../../assets/img/tabbar/unknown-icon.png" alt="未知图片"></slot>
+      <slot name="icon"><img src="~assets/img/tabbar/unknown-icon.png" alt="未知图片"></slot>
       <p><slot name="text">未知文字</slot></p>
     </div>
 
@@ -34,14 +34,14 @@
       }
     },
     methods: {
-      btnclick() {
+      tabbarItemClick() {
         this.$router.push(this.url)
       }
     }
   }
 </script>
 
-<style>
+<style scoped>
   #tabbar-item div {
     font-size: 2vh;
     display: flex;

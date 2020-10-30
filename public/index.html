@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 修改网站图标 -->
+    <!-- <%= BASE_URL %>是后端渲染的语法，这里的BASE_URL获取的是当前文件的路径 -->
+    <!-- 打包之后，便不会有这个了 -->
+    <link rel="icon" href="<%= BASE_URL %>mall.png">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>

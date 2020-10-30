@@ -1,63 +1,34 @@
 <template>
   <div id="app">
-    <tabbar>
-      <template v-slot:default>
-        <tabbar-item url="/home" text-color="red">
-          <template v-slot:icon>
-            <img src="./assets/img/tabbar/home.svg" alt="首页">
-          </template>
-          <template v-slot:icon-active>
-            <img src="./assets/img/tabbar/home_active.svg" alt="购物车">
-          </template>
-          <template v-slot:text>首页</template>
-        </tabbar-item>
-
-        <tabbar-item url="/category" text-color="red">
-          <template v-slot:icon>
-            <img src="./assets/img/tabbar/category.svg" alt="分类">
-          </template>
-          <template v-slot:icon-active>
-            <img src="./assets/img/tabbar/category_active.svg" alt="购物车">
-          </template>
-          <template v-slot:text>分类</template>
-        </tabbar-item>
-
-        <tabbar-item url="/shopcart" text-color="red">
-          <template v-slot:icon>
-            <img src="./assets/img/tabbar/shopcart.svg" alt="购物车">
-          </template>
-          <template v-slot:icon-active>
-            <img src="./assets/img/tabbar/shopcart_active.svg" alt="购物车">
-          </template>
-          <template v-slot:text>购物车</template>
-        </tabbar-item>
-
-        <tabbar-item url="/profile" text-color="red">
-          <template v-slot:icon>
-            <img src="./assets/img/tabbar/profile.svg" alt="我的">
-          </template>
-          <template v-slot:icon-active>
-            <img src="./assets/img/tabbar/profile_active.svg" alt="购物车">
-          </template>
-          <template v-slot:text>我的</template>
-        </tabbar-item>
-      </template>
-    </tabbar>
-    <keep-alive>
-      <router-view></router-view>
+    <!-- 之前使用fixed定位的时候写在这里的，使用better-scroll之后写在下面 -->
+    <!-- <main-tabbar /> -->
+    <keep-alive exclude="Detail">
+      <router-view :key="$route.fullPath"></router-view>
     </keep-alive>
+    <main-tabbar v-if="isShowed"/>
   </div>
 </template>
 
 <script>
-  import Tabbar from "components/common/Tabbar/Tabbar.vue"
-  import TabbarItem from "components/common/TabbarItem/TabbarItem.vue"
-
+  import MainTabbar from "components/content/mainTabbr/MainTabbr.vue"
   export default {
     name: 'App',
+    data(){
+      return {
+        isShowed:true
+      }
+    },
     components: {
-      Tabbar,
-      TabbarItem
+      MainTabbar
+    },
+    watch:{
+      $route:function(to,from){
+        if(to.path === "/detail"){
+          this.isShowed = false
+        }else{
+          this.isShowed = true
+        }
+      }
     }
   }
 </script>

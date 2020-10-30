@@ -1,10 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-const Home = () => import("views/Home");
-const Category = () => import("views/Category");
-const Shopcart = () => import("views/Shopcart");
-const Profile = () => import("views/Profile");
+const Home = () => import("views/home/Home");
+const Category = () => import("views/category/Category");
+const Shopcart = () => import("views/shopcart/Shopcart");
+const Profile = () => import("views/profile/Profile");
+const Detail = () => import("views/detail/Detail")
 
 Vue.use(VueRouter)
 
@@ -16,8 +17,8 @@ VueRouter.prototype.push = function push(location) {
 
 const routes = [
   {
-    path:"/",
-    redirect:"/home"
+    path: "/",
+    redirect: "/home"
   },
   {
     path: "/home",
@@ -34,6 +35,10 @@ const routes = [
   {
     path: "/profile",
     component: Profile
+  },
+  {
+    path: "/detail",
+    component: Detail
   }
 ]
 
