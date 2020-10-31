@@ -1,5 +1,5 @@
 <template>
-  <div id="scroll" ref="scroll" :style="{ height, overflow: 'hidden' }">
+  <div class="scroll" ref="scroll" :style="{ height, overflow: 'hidden' }">
     <div class="content">
       <slot></slot>
     </div>

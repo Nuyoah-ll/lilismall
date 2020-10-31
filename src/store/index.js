@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import homeModule from "./modules/home";
 import detailModule from "./modules/detail"
 import shopcartModule from "./modules/shopcart"
+import categoryModule from "./modules/category"
 
 Vue.use(Vuex)
 
@@ -15,7 +16,8 @@ const store = new Vuex.Store({
   modules: {
     a: homeModule,
     b: detailModule,
-    c: shopcartModule
+    c: shopcartModule,
+    d: categoryModule
   }
 })
 

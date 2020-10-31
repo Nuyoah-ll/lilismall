@@ -1,5 +1,5 @@
 <template>
-  <div id="goods-list">
+  <div id="goods-list" :style="{width}">
     <goods-list-item v-for="item in goods" :key="item.acm" :good="item" />
   </div>
 </template>
@@ -16,8 +16,14 @@ export default {
     goods: {
       type: Array,
       required: true,
-      default: [],
+      default(){
+        return []
+      },
     },
+    width:{
+      type:String,
+      required:true
+    }
   },
   created() {
     // console.log("HomeGoodsList被创建了");
@@ -30,7 +36,6 @@ export default {
 
 <style scoped>
 #goods-list {
-  width: 100vw;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;

@@ -44,7 +44,7 @@ export default {
     commonImg(){
       // 因为Home和Detail组件中展示的商品是不同接口返回的数据，数据结构不一样，所以需要在这里处理一下
       // 其中，Home组件中接口返回的商品图片在show.img里，而Detail组件中接口返回的商品图片在image里
-      return this.good.image || this.good.show.img
+      return this.good.img || this.good.image || this.good.show.img
     },
     commonPrice(){
       // 价格也需要进行处理

@@ -168,9 +168,11 @@ export default {
       if (getters.info === null) {
         return null;
       } else {
-        const color = getters.info.set.filter(item => {
+        const arr = getters.info.set.filter(item => {
           return item.key === "颜色"
-        })[0].value.split(",");
+        })[0]
+        if(arr === undefined) return null;
+        const color = arr.value.split(",");
         return color
       }
     },
@@ -178,9 +180,11 @@ export default {
       if (getters.info === null) {
         return null;
       } else {
-        const size = getters.info.set.filter(item => {
+        const arr = getters.info.set.filter(item => {
           return item.key === "尺码"
-        })[0].value.split(",");
+        })[0];
+        if(arr ===  undefined) return null;
+        const size = arr.value.split(",");
         return size;
       }
     }

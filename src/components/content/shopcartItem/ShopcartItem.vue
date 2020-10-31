@@ -156,9 +156,6 @@ export default {
 
 .good-params span {
   padding: 5px;
-  border: 1px solid rgb(138, 138, 138);
-  border-radius: 5px;
-  background-color: white;
 }
 
 .price-and-num {

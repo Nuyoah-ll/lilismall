@@ -1,3 +1,4 @@
+// 导入组件模板
 import ToastPlugin from "./ToastPlugin.vue";
 
 const obj = {};

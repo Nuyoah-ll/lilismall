@@ -3,14 +3,17 @@
     <goods-list
       v-if="currentIndex === 0"
       :goods="$store.state.a.goods.pop.list"
+      width="100vw"
     />
     <goods-list
       v-if="currentIndex === 1"
       :goods="$store.state.a.goods.new.list"
+      width="100vw"
     />
     <goods-list
       v-if="currentIndex === 2"
       :goods="$store.state.a.goods.sell.list"
+      width="100vw"
     />
   </div>
 </template>
@@ -27,7 +30,7 @@ export default {
       required: true,
       default: 0,
     },
-  }
+  },
 };
 </script>
 

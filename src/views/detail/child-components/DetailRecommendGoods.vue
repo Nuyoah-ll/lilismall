@@ -2,7 +2,7 @@
   <div id="detail-recommed-goods">
     <p class="recomment-title">热门推荐</p>
     <p class="none-recommend" v-if="!$store.state.b.detailRecommendList">暂无推荐</p>
-    <goods-list :goods="$store.state.b.detailRecommendList"/>
+    <goods-list :goods="$store.state.b.detailRecommendList" width="100vw"/>
   </div>
 </template>
 
