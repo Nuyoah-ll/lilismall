@@ -2,7 +2,7 @@
   <div id="profile-navbar">
     <navbar>
       <template v-slot:center>
-        <p>李理的商城</p>
+        <p>商城</p>
       </template>
     </navbar>
   </div>
